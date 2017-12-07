@@ -42,6 +42,12 @@ public class PlayerController : MonoBehaviour {
             moveSpeed = 0;
         }
 
+        // Shoot
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetTrigger("shootBow");
+        }
+
         // Animator
         animator.SetFloat("Speed", moveSpeed);
 	}
